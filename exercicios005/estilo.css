@@ -1,0 +1,41 @@
+/*??CSS - cascading style sheet  */
+
+
+/** Seletor */
+body {
+    /**propriedade: valor*/
+    color: black;
+    background-color: #d2bfdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+#foto{
+    width: 300px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+
+
+/* ! cores */
+
+/*?? cores originais 
+    background-color: #d2bfdb;
+    color: black;
+
+    cor dia
+    background-color: yellow;
+    color: black;
+
+
+    cor tarde 
+    background-color: orange;
+    color: black
+
+     cor noite
+    background-color: #020524
+    color: white
+
+*/
