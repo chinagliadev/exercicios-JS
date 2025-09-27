@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Exercicio 010</h1>
+
+    <h3>10 Calcular a média de N alunos.</h3>
+    <p>Vamos fazer um programa para calcular a média de um aluno. Ao apresentar o resultado, o programa deve perguntar se gostaria de calcular a média de outro aluno, caso a resposta seja SIM, o programa deve executar novamente.</p>
+
+    <hr>
+
+    <main>
+        <form id="painel_formulario">
+            <h2>Calcular media</h2>
+            <label>Nome: </label>
+            <input id="nome" type="text"><br>
+            <label>Nota 1: </label>
+            <input type="number" id="nota1"><br>
+            <label>Nota 2: </label>
+            <input type="number" id="nota2"><br>
+            <label>Nota 3: </label>
+            <input type="number" id="nota3"><br>
+            <label>Nota 4: </label>
+            <input type="number" id="nota4"><br>
+            <button type="button" onclick="fnCalcularMedia()">Calcular</button>
+        </form>
+    </main>
+
+
+    <div id="painel_resultado">
+        <h3>Média: 
+            <span id="nome_resultado"></span> - 
+            <span id="media"></span>
+        </h3>
+
+        <button type="button" onclick="fnExibir('formulario')">Calcular a média do outro aluno</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
