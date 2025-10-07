@@ -3,12 +3,8 @@ let veiculos = []
 
 function fnSalvarVeiculo() {
     numerosDeVagas.push(document.getElementById("numero_vaga").value)
-    if(!veiculos.includes(document.getElementById("veiculo").value)){
-        alert("entrou")
-        veiculos.push(veiculo)
-    }else{
-        alert("item ja cadastrado")
-    }
+    let veiculo = document.getElementById("veiculo").value
+    veiculos.push(veiculo)
 }
 
 function fnListarVeiculo() {
@@ -21,4 +17,6 @@ function fnListarVeiculo() {
     }
 }
 
-function fnLimpar() { }
+function fnLimpar() {
+    document.getElementById("form_veiculos").reset()
+}

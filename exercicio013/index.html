@@ -10,13 +10,13 @@
     <title>Exercicio 013</title>
 </head>
 
-<body>
+<body class="bg-light">
     <div class="container">
         <h1>Exercicio 013</h1>
         <blockquote class="blockquote">Quem com ferro fere, com ferro será ferido</blockquote>
         <p>13 armazenando lista de carros de um estacionamento</p>
         <hr>
-        <form class="border border-info border-3 rounded p-3 m-5">
+        <form id="form_veiculos" class="shadow border-3 rounded p-3 m-5 bg-white">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <label for="numero_vaga" class="form-label">Numero da Vaga</label>
@@ -29,12 +29,12 @@
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <button type="button" class="btn btn-success w-25" onclick="fnSalvarVeiculo();fnListarVeiculo()">SALVAR</button>
+                    <button type="button" class="btn btn-success btn-sm w-25" onclick="fnSalvarVeiculo();fnListarVeiculo();fnLimpar()">SALVAR</button>
                 </div>
             </div>
         </form>
         <div class="row">
-            <table class="table w-75 m-auto">
+            <table class="table w-75 m-auto shadow bg-white">
                 <thead>
                     <thead>
                         <tr>
@@ -44,10 +44,7 @@
                     </thead>
                 </thead>
                 <tbody id="tabela_veiculos">
-                    <tr>
-                        <td>001</td>
-                        <td>Marea EAH-2021</td>
-                    </tr>
+                   
                 </tbody>
             </table>
         </div>
