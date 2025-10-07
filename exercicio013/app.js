@@ -3,7 +3,12 @@ let veiculos = []
 
 function fnSalvarVeiculo() {
     numerosDeVagas.push(document.getElementById("numero_vaga").value)
-    veiculos.push(document.getElementById("veiculo").value)
+    if(!veiculos.includes(document.getElementById("veiculo").value)){
+        alert("entrou")
+        veiculos.push(veiculo)
+    }else{
+        alert("item ja cadastrado")
+    }
 }
 
 function fnListarVeiculo() {
