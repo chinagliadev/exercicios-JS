@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.card_filme {
+    height: auto;
+}
+
+.imagem-card {
+    height: 300px;
+    object-fit: cover;
+}
